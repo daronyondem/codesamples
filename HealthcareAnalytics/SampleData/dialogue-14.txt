@@ -1,0 +1,1 @@
+{"Id":14,"Description":"Where can I be tested for covid 19?\r\n\r\n","DialogueText":"Patient:\r\nWhere can I be tested for covid 19?\r\nDoctor:\r\nyour local doctor, local health department, we have no idea here what your set up is where you live.\r\n\r\n"}

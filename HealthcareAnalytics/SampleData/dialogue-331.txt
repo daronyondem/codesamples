@@ -1,0 +1,1 @@
+{"Id":331,"Description":"How do I book a virtual consultation with my doctor for Covid-19?\r\n\r\n","DialogueText":"Patient:\r\nHow do I book a virtual consultation with my doctor for Covid-19?\r\nDoctor:\r\nIn brief:   Call your doctor   Call your doctor\u0027s office for instructions  Would you like to video or text chat with me?        \r\n\r\n"}

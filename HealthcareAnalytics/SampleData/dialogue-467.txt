@@ -1,0 +1,1 @@
+{"Id":467,"Description":"Is it safe to eat food prepared by someone with coronavirus? Even if they wear a mask and gloves?\r\n\r\n","DialogueText":"Patient:\r\nIs it safe to eat food prepared by someone with coronavirus? Even if they wear a mask and gloves?\r\nDoctor:\r\nBetter to skip. The protective gear is not protectve enough to prepare food.\r\n\r\n"}

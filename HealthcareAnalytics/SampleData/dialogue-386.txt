@@ -1,0 +1,1 @@
+{"Id":386,"Description":"I use Athraway chronic for rheumatoid arthritis, will this complicate things relating to the corona virus?\r\n\r\n","DialogueText":"Patient:\r\nI use Athraway chronic for rheumatoid arthritis, will this complicate things relating to the corona virus?\r\nDoctor:\r\nNo. I do not think it will have any effect on corona virus.\r\n\r\n"}

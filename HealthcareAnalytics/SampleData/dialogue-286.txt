@@ -1,0 +1,1 @@
+{"Id":286,"Description":"If I have had a sore throat for 3 days but with no fever should I be tested for COVID-19?\r\n\r\n","DialogueText":"Patient:\r\nIf I have had a sore throat for 3 days but with no fever should I be tested for COVID-19?\r\nDoctor:\r\nCall \r\n\r\n"}

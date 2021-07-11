@@ -1,0 +1,1 @@
+{"Id":372,"Description":"Itchy/burning throat. No cough. Could this be corona infection?\r\n\r\n","DialogueText":"Patient:\r\nItchy/burning throat. No cough. Could this be corona infection?\r\nDoctor:\r\nIt could be. self isolate, wash your hands, plenty of fluids and rest, if you get  a high fever or have trouble breathing call your doctor.\r\n\r\n"}

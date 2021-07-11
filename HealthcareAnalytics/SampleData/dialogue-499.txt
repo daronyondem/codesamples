@@ -1,0 +1,1 @@
+{"Id":499,"Description":"Body ache and fever, scratchy itchy throat?\r\n\r\n","DialogueText":"Patient:\r\nBody ache and fever, scratchy itchy throat?\r\nDoctor:\r\nEarly COVID-19? Call your health care provider to get instructions regarding testing, self-quarantine and possible hospitalization then follow through!\r\n\r\n"}

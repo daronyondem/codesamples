@@ -1,0 +1,1 @@
+{"Id":521,"Description":"I think I need to be tested for covid-19?\r\n\r\n","DialogueText":"Patient:\r\nI think I need to be tested for covid-19?\r\nDoctor:\r\nCovid 19. Dear Patient.What is your concern/ symptoms?Dr Wil.\r\n\r\n"}

@@ -1,0 +1,1 @@
+{"Id":250,"Description":"How do I know if I have corona virus?\r\n\r\n","DialogueText":"Patient:\r\nHow do I know if I have corona virus?\r\nDoctor:\r\nTO be sure, GET TESTED!\r\n\r\n"}

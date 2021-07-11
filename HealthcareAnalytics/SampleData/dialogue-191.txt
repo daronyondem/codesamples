@@ -1,0 +1,1 @@
+{"Id":191,"Description":"Do I have covid 19?\r\n\r\n","DialogueText":"Patient:\r\nDo I have covid 19?\r\nDoctor:\r\nIn brief:   Unknown   Without any details it\u0027s impossible to say.  Would you like to video or text chat with me?        \r\n\r\n"}

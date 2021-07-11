@@ -1,0 +1,1 @@
+{"Id":468,"Description":"Can the meat I eat give me coronavirus? Will cooking kill the coronavirus?\r\n\r\n","DialogueText":"Patient:\r\nCan the meat I eat give me coronavirus? Will cooking kill the coronavirus?\r\nDoctor:\r\nCooking will kill. Cooking adequately will kill the virus-30 sec of ,microwave.\r\n\r\n"}

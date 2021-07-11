@@ -1,0 +1,1 @@
+{"Id":15,"Description":"Am I at risk for COVID-19 in the United States?\r\n\r\n","DialogueText":"Patient:\r\nAm I at risk for COVID-19 in the United States?\r\nDoctor:\r\nCOVID infections will likely pick up over the next few weeks in US. Avoiding travel and following hand washing recommendations are probably the most important prophylactic measures.\r\n\r\n"}

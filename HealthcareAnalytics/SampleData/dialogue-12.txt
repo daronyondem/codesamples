@@ -1,0 +1,1 @@
+{"Id":12,"Description":"Is the coronavirus 229E the same as covid-19?\r\n\r\n","DialogueText":"Patient:\r\nIs the coronavirus 229E the same as covid-19?\r\nDoctor:\r\nCoV229e is one of several coronaviruses that cause common colds. Biologically related to SARS-CoV-2 (the cause of COVID-19), but different viruses.\r\n\r\n"}

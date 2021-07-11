@@ -1,0 +1,1 @@
+{"Id":472,"Description":"does a virus cause lesions dry and oily nose\r\n\r\n","DialogueText":"Patient:\r\ndoes a virus cause lesions dry and oily nose\r\nDoctor:\r\nIn brief:   Usually not   more likely to cause runny nose increase moist discharge  Would you like to video or text chat with me?        \r\n\r\n"}

@@ -1,0 +1,1 @@
+{"Id":260,"Description":"If I leave Covid 19 infected product in fridge, will virus die or survive in the fridge?\r\n\r\n","DialogueText":"Patient:\r\nIf I leave Covid 19 infected product in fridge, will virus die or survive in the fridge?\r\nDoctor:\r\nCovid. Data from frozen food shows that there is no transfer of virus via food sources this way. .\r\n\r\n"}
