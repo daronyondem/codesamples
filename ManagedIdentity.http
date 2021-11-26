@@ -1,0 +1,15 @@
+POST https://20211126-drn-managed-identity.azurewebsites.net/api/DumpRequest?id={{$guid}}&code=
+Content-Type: application/json
+
+{
+  "Sample": "Body"
+}
+
+### 
+
+POST  http://localhost:7071/api/DumpRequest?id={{$guid}}
+Content-Type: application/json
+
+{
+  "Sample": "Body"
+}
