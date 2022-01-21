@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2a1a99d-29f1-4d20-9bf1-dea068d7c665": {
+      "ProjectGuid": "a2a1a99d-29f1-4d20-9bf1-dea068d7c665",
+      "DisplayName": "TimerTrigger",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "729acdb3-a8ae-400f-b507-7e7521d44e6b": {
+      "ProjectGuid": "729acdb3-a8ae-400f-b507-7e7521d44e6b",
+      "DisplayName": "ImageResizing",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
