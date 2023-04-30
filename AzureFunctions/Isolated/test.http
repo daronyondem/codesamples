@@ -1,0 +1,23 @@
+POST https://management.azure.com/subscriptions/XXXXX/resourceGroups/XXXXX/providers/Microsoft.CostManagement/query?api-version=2022-10-01
+Authorization:Bearer Token
+Content-Type: application/json
+
+{
+  "type": "Usage",
+  "timeframe": "MonthToDate",
+  "dataset": {
+    "granularity": "None",
+    "grouping": [
+      {
+        "type": "Dimension",
+        "name": "ResourceGroupName"
+      }
+    ],
+    "aggregation": {
+      "totalCost": {
+        "name": "PreTaxCost",
+        "function": "Sum"
+      }
+    }
+  }
+}
