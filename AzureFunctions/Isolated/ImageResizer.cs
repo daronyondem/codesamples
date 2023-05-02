@@ -31,26 +31,34 @@ namespace Company.Function
 
             var thumbnailWidth = Convert.ToInt32(Environment.GetEnvironmentVariable("THUMBNAIL_WIDTH"));
 
-            using (Image<Rgb24> image = (Image<Rgb24>)Image.Load(input))
+            using (Image image = Image.Load(input))
             {
-                var mem = new MemoryStream();
+                MemoryStream mem = new MemoryStream();
                 var divisor = image.Width / thumbnailWidth;
                 var mediumHeight = Convert.ToInt32(Math.Round((decimal)(image.Height / divisor)));
 
-                image.Mutate(x => x.Resize(thumbnailWidth, mediumHeight));
+                image.Mutate(x => x.Resize(new ResizeOptions
+                {
+                    Size = new Size(thumbnailWidth, mediumHeight)
+                }));
+
                 image.Save(mem, new JpegEncoder());
                 output.imageMedium = mem.ToArray();
             }
 
             input.Position = 0;
-            using (Image<Rgb24> image = (Image<Rgb24>)Image.Load(input))
+            thumbnailWidth = thumbnailWidth /2;
+            using (Image image = Image.Load(input))
             {
-                var mem = new MemoryStream();
-                thumbnailWidth = thumbnailWidth /2; 
+                MemoryStream mem = new MemoryStream();
                 var divisor = image.Width / thumbnailWidth;
-                var smallHeight = Convert.ToInt32(Math.Round((decimal)(image.Height / divisor)));
+                var mediumHeight = Convert.ToInt32(Math.Round((decimal)(image.Height / divisor)));
 
-                image.Mutate(x => x.Resize(thumbnailWidth, smallHeight));
+                image.Mutate(x => x.Resize(new ResizeOptions
+                {
+                    Size = new Size(thumbnailWidth, mediumHeight)
+                }));
+
                 image.Save(mem, new JpegEncoder());
                 output.imageSmall = mem.ToArray();
             }
@@ -60,10 +68,10 @@ namespace Company.Function
         public class MyOutputType
         {
              [BlobOutput("sample-images-sm/{name}", Connection = "AzureWebJobsStorage")]
-            public byte[] imageSmall { get; set; }
+            public byte[]? imageSmall { get; set; }
 
             [BlobOutput("sample-images-md/{name}", Connection = "AzureWebJobsStorage")]
-            public byte[] imageMedium { get; set; }
+            public byte[]? imageMedium { get; set; }
         }
     }
 }
