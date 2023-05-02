@@ -1,3 +1,15 @@
+### Durable Functions
+
+GET http://localhost:7071/api/DurableFunctionsOrchestrationCSharp1_HttpStart
+
+
+### External Event Webhook
+POST http://localhost:7071/runtime/webhooks/durabletask/instances/f3d50faeecad4e59b6ebc3ed5a3a5bfc/raiseEvent/SmsChallengeResponse?code=Gj7XoUndRnPUy7hCfC5W5YkKgTgEKLtKhod7vxlX4xesAzFuRMuHUA==
+content-type: application/json
+
+2
+
+### Testing Consumpton API
 POST https://management.azure.com/subscriptions/XXXXX/resourceGroups/XXXXX/providers/Microsoft.CostManagement/query?api-version=2022-10-01
 Authorization:Bearer Token
 Content-Type: application/json
