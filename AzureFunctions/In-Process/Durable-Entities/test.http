@@ -1,0 +1,29 @@
+### Get a current Actor
+GET http://localhost:7071/api/classbasedactor/daron/get
+
+### Create a new Actor
+GET http://localhost:7071/api/classbasedactor/daron/add
+
+### Add value to Actor
+GET http://localhost:7071/api/classbasedactor/daron/add?inputValue=10
+
+### Delete the actor
+GET http://localhost:7071/api/classbasedactor/daron/delete
+
+### Reset the actor
+GET http://localhost:7071/api/classbasedactor/daron/reset
+
+### Get a current Actor
+GET http://localhost:7071/api/functionbasedactor/daron/get
+
+### Create a new Actor
+GET http://localhost:7071/api/functionbasedactor/daron/add
+
+### Add value to Actor
+GET http://localhost:7071/api/functionbasedactor/daron/add?inputValue=10
+
+### Delete the actor
+GET http://localhost:7071/api/functionbasedactor/daron/delete
+
+### Reset the actor
+GET http://localhost:7071/api/functionbasedactor/daron/reset

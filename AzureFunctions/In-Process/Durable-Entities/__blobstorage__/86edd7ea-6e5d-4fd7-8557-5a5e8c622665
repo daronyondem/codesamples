@@ -1,0 +1,43 @@
+{
+  "masterKey": {
+    "name": "master",
+    "value": "b_JSbfqaP1550BdDmwU06CHoUAdn5jzhUR3tatO2yAqbAzFusB6HuQ==",
+    "encrypted": false
+  },
+  "functionKeys": [
+    {
+      "name": "default",
+      "value": "RV1eTfJSJMQLDiZR1zFUjVn-yAOgyaV1fb3ALCtFitU7AzFuXVaxhQ==",
+      "encrypted": false
+    }
+  ],
+  "systemKeys": [],
+  "hostName": "localhost:7071",
+  "instanceId": "000000000000000000000000BBBF3F67",
+  "source": "runtime",
+  "decryptionKeyId": ""
+}{
+  "masterKey": {
+    "name": "master",
+    "value": "b_JSbfqaP1550BdDmwU06CHoUAdn5jzhUR3tatO2yAqbAzFusB6HuQ==",
+    "encrypted": false
+  },
+  "functionKeys": [
+    {
+      "name": "default",
+      "value": "RV1eTfJSJMQLDiZR1zFUjVn-yAOgyaV1fb3ALCtFitU7AzFuXVaxhQ==",
+      "encrypted": false
+    }
+  ],
+  "systemKeys": [
+    {
+      "name": "durabletask_extension",
+      "value": "Di3RjBhvjIbkm59oEoF6JImyQFGcAWEKbjaChiA6qz4uAzFub4o8xg==",
+      "encrypted": false
+    }
+  ],
+  "hostName": "localhost:7071",
+  "instanceId": "000000000000000000000000BBBF3F67",
+  "source": "runtime",
+  "decryptionKeyId": ""
+}{}{"TaskHubName":"TestHubName","CreatedAt":"2023-05-24T08:58:24.9052423Z","PartitionCount":4}{"PartitionId":"testhubname-control-03","Owner":null,"Token":null,"Epoch":0}{"OwnerId":"811c9dc5-0000-0000-0000-000000000000","DesiredSwapId":null}{"PartitionId":"testhubname-control-00","Owner":"DRNHOME2023","Token":"fc8b18de-01ea-419f-a81f-4612307333c0","Epoch":1}{"PartitionId":"testhubname-control-01","Owner":"DRNHOME2023","Token":"1f3638a9-af57-42eb-89e3-0a2bde9d51b6","Epoch":1}{"PartitionId":"testhubname-control-02","Owner":"DRNHOME2023","Token":"6c25ff82-bd87-43a6-822b-ad0e58579b84","Epoch":1}{"PartitionId":"testhubname-control-03","Owner":"DRNHOME2023","Token":"1f576989-5c80-49b9-bf86-c095fa552b15","Epoch":1}{"PartitionId":"testhubname-control-00","Owner":"DRNHOME2023","Token":"96ee7548-b8e0-4d4a-81e7-4a13958f1636","Epoch":1}{"PartitionId":"testhubname-control-01","Owner":"DRNHOME2023","Token":"139ffbd3-1535-427a-bc7e-70540220c71a","Epoch":1}{"PartitionId":"testhubname-control-02","Owner":"DRNHOME2023","Token":"ff7e5e6e-c486-4978-8209-5585281e5137","Epoch":1}{"PartitionId":"testhubname-control-03","Owner":"DRNHOME2023","Token":"c06f956a-1ea7-4bf2-95eb-c4f85aebf1a6","Epoch":1}{}{"PartitionId":"testhubname-control-03","Owner":null,"Token":null,"Epoch":0}{}{"PartitionId":"testhubname-control-02","Owner":null,"Token":null,"Epoch":0}{"PartitionId":"testhubname-control-00","Owner":null,"Token":null,"Epoch":0}

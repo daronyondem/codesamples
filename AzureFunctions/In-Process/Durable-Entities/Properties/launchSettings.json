@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Durable_Entities": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7118",
+      "launchBrowser": false
+    }
+  }
+}
