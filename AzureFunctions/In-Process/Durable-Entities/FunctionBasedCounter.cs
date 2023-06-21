@@ -11,7 +11,9 @@ namespace Company.Function
             switch (ctx.OperationName.ToLowerInvariant())
             {
                 case "add":
-                    ctx.SetState(ctx.GetState<int>() + ctx.GetInput<int>());
+                    var input = ctx.GetInput<int>();
+                    var currentState = ctx.GetState<int>();
+                    ctx.SetState(currentState + input);
                     break;
                 case "reset":
                     ctx.SetState(0);

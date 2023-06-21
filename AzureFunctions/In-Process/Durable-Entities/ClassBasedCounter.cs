@@ -1,14 +1,19 @@
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
-using Newtonsoft.Json;
 using Microsoft.Azure.WebJobs.Extensions.DurableTask;
+using Newtonsoft.Json;
 
 namespace Company.Function
 {
     [JsonObject(MemberSerialization.OptIn)]
     public class ClassBasedCounter
     {
-        [JsonProperty("value")]
+        public ClassBasedCounter()
+        {
+            Value = 0;
+        }
+        
+        [JsonProperty]
         public int Value { get; set; }
 
         public void Add(int amount) 
@@ -24,7 +29,7 @@ namespace Company.Function
 
         public Task<int> Get() 
         {
-            return Task.FromResult(this.Value);
+            return Task.FromResult( this.Value);;
         }
 
         public void Delete() 

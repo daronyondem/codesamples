@@ -1,13 +1,11 @@
-using System;
-using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using Microsoft.Azure.WebJobs.Extensions.DurableTask;
+using Newtonsoft.Json.Linq;
 
 namespace Company.Function
 {
@@ -28,7 +26,7 @@ namespace Company.Function
                 return new BadRequestObjectResult("Please provide operation (add, reset, get, delete) and entityId.");
             }
 
-            var entityIdObj = new EntityId(nameof(FunctionBasedCounter), entityId);
+            var entityIdObj = new EntityId(nameof(ClassBasedCounter), entityId);
 
             switch (operation.ToLowerInvariant())
             {
@@ -44,9 +42,9 @@ namespace Company.Function
                 case "get":
                     //Beware of caching 
                     // https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-dotnet-entities#example-client-reads-entity-state
-                    EntityStateResponse<int> stateResponse = await entityClient.ReadEntityStateAsync<int>(entityIdObj);
+                    var stateResponse = await entityClient.ReadEntityStateAsync<object>(entityIdObj);
                     if (stateResponse.EntityExists)
-                        return new OkObjectResult(stateResponse.EntityState);
+                        return new OkObjectResult(((JObject)stateResponse.EntityState)["Value"].Value<int>());
                     else
                         return new NotFoundObjectResult("Entity not found.");
                 default:
