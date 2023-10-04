@@ -1,0 +1,8 @@
+{
+  "AzureOpenAI": {
+    "DeploymentName": "",
+    "Endpoint": "https://XXX.openai.azure.com/",
+    "Key": ""
+  },
+  "PluginManifestUrl": "http://localhost:7071/.well-known/ai-plugin.json"
+}
