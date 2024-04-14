@@ -1,3 +1,4 @@
 
 *.pubxml
 **/.env
+**/.DS_Store
