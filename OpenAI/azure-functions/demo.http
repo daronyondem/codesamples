@@ -4,3 +4,11 @@ POST http://localhost:7071/api/GenerateEmbeddings
 Content-Type: application/json
 
 {"TextBody": "Enter raw text here for embedding generation."}
+
+### Ingestion from Raw Text
+
+POST http://localhost:7071/api/IngestText
+Content-Type: application/json
+
+{"Title": "Sample Text", 
+"TextBody": "Enter raw text here for embedding generation."}
