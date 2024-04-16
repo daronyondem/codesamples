@@ -5,6 +5,7 @@
     "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
     "AZURE_OPENAI_ENDPOINT": "https://<your-service-endpoint>.openai.azure.com",
     "EMBEDDING_MODEL_DEPLOYMENT_NAME": "text-embedding-ada-002",
+    "CHAT_MODEL_DEPLOYMENT_NAME": "gpt-4",
     "AZURE_OPENAI_KEY":"<your-service-key>",
     "AISearchEndpoint": "https://<your-service-endpoint>.search.windows.net",
     "SearchAPIKey": "<your-search-access-key>"

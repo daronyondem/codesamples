@@ -9,8 +9,8 @@
       "openai": {
         "searchProvider": {
           "type": "azureAiSearch",
-          "isSemanticSearchEnabled": true,
-          "useSemanticCaptions": true,
+          "isSemanticSearchEnabled": false,
+          "useSemanticCaptions": false,
           "vectorSearchDimensions": 1536
         }
       }

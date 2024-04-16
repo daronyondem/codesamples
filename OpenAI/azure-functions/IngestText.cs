@@ -26,6 +26,7 @@ namespace Contoso.OpenAI
             using StreamReader reader = new(req.Body);
             string requestBody = await reader.ReadToEndAsync();
             var data = JsonSerializer.Deserialize<dynamic>(requestBody);
+            
             string title = data.GetProperty("Title").GetString();
 
             HttpResponseData response = req.CreateResponse(HttpStatusCode.OK);
