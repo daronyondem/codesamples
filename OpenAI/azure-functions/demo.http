@@ -21,7 +21,7 @@ Content-Type: application/json
 {"Title": "Sample Text", 
 "TextBody": "John is not born yet."}
 
-### Send a search query 
+### Send a RAG Prompt
 POST http://localhost:7071/api/RAGPrompting
 Content-Type: application/json
 

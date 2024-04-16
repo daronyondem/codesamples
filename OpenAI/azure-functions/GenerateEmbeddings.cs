@@ -17,7 +17,8 @@ namespace Contoso.OpenAI
 
         [Function("GenerateEmbeddings")]
         public IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequest req,
-        [EmbeddingsInput("{TextBody}", InputType.RawText, Model = "%EMBEDDING_MODEL_DEPLOYMENT_NAME%")] EmbeddingsContext embeddings)
+        [EmbeddingsInput("{TextBody}", InputType.RawText, 
+            Model = "%EMBEDDING_MODEL_DEPLOYMENT_NAME%")] EmbeddingsContext embeddings)
         {
             this._logger.LogInformation("Received {count} embedding(s).",embeddings.Count);
             return new OkObjectResult(embeddings.Response.Data[0].Embedding);

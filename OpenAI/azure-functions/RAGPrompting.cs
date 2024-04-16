@@ -22,7 +22,13 @@ namespace Contoso.OpenAI
         [Function("RAGPrompting")]
         public static IActionResult Prompt(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequest req,
-            [SemanticSearchInput("AISearchEndpoint", "vector-index", CredentialSettingName = "SearchAPIKey", Query = "{Prompt}", ChatModel = "%CHAT_MODEL_DEPLOYMENT_NAME%", EmbeddingsModel = "%EMBEDDING_MODEL_DEPLOYMENT_NAME%", MaxKnowledgeCount = 1, SystemPrompt = "Only use information you are given.")] SemanticSearchContext result)
+            [SemanticSearchInput("AISearchEndpoint", "vector-index", 
+                CredentialSettingName = "SearchAPIKey", 
+                Query = "{Prompt}", 
+                ChatModel = "%CHAT_MODEL_DEPLOYMENT_NAME%", 
+                EmbeddingsModel = "%EMBEDDING_MODEL_DEPLOYMENT_NAME%", 
+                MaxKnowledgeCount = 1, 
+                SystemPrompt = "Only use information you are given.")] SemanticSearchContext result)
         {
             return new ContentResult { Content = result.Response, ContentType = "text/plain" };
         }

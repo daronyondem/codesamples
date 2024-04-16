@@ -21,7 +21,8 @@ namespace Contoso.OpenAI
         [Function("IngestText")]
         public static async Task<SemanticSearchOutputResponse> IngestFile(
             [HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req,
-            [EmbeddingsInput("{TextBody}", InputType.RawText, Model = "%EMBEDDING_MODEL_DEPLOYMENT_NAME%")] EmbeddingsContext embeddings)
+            [EmbeddingsInput("{TextBody}", InputType.RawText,
+                Model = "%EMBEDDING_MODEL_DEPLOYMENT_NAME%")] EmbeddingsContext embeddings)
         {
             using StreamReader reader = new(req.Body);
             string requestBody = await reader.ReadToEndAsync();
@@ -41,7 +42,9 @@ namespace Contoso.OpenAI
 
         public class SemanticSearchOutputResponse
         {
-            [SemanticSearchOutput("AISearchEndpoint", "vector-index", CredentialSettingName = "SearchAPIKey", EmbeddingsModel = "%EMBEDDING_MODEL_DEPLOYMENT_NAME%")]
+            [SemanticSearchOutput("AISearchEndpoint", "vector-index", 
+            CredentialSettingName = "SearchAPIKey", 
+            EmbeddingsModel = "%EMBEDDING_MODEL_DEPLOYMENT_NAME%")]
             public SearchableDocument SearchableDocument { get; set; }
 
             public HttpResponseData? HttpResponse { get; set; }
