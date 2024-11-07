@@ -8,3 +8,7 @@ OpenAI/azure-functions/__azurite_db_queue__.json
 OpenAI/azure-functions/__azurite_db_queue_extent__.json
 OpenAI/azure-functions/__azurite_db_table__.json
 OpenAI/azure-functions/__blobstorage__/250af2ef-58d0-410e-b7c7-a93354732813
+AutoGen/.cache/42/cache.db
+AutoGen/.cache/42/cache.db-shm
+AutoGen/.cache/42/cache.db-wal
+/AutoGen/coding
