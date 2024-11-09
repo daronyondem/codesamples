@@ -3,3 +3,4 @@ flaml
 matplotlib
 yfinance
 ipywidgets
+numpy
