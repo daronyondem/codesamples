@@ -2,3 +2,4 @@ autogen
 flaml
 matplotlib
 yfinance
+ipywidgets
