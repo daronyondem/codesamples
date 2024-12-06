@@ -4,3 +4,4 @@ matplotlib
 yfinance
 ipywidgets
 numpy
+graphviz
