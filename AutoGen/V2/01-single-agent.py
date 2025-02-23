@@ -32,5 +32,6 @@ user_proxy = UserProxyAgent(
 user_proxy.initiate_chat(
     assistant,
     message="What is the capital of France?",
-    max_turns=3  # Limit the conversation to 2 turns
+    max_turns=3,  # Limit the conversation to 2 turns
+    silent=False # Explicitly ensure messages are printed
 )
