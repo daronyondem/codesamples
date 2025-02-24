@@ -1,7 +1,7 @@
 import os
 from autogen import AssistantAgent, UserProxyAgent
 
-# Configure the LLM with GPT-4 using the OpenAI API key from environment variables
+# Configure the LLM with local LLAMA
 llm_config = {
     "config_list": [{
         "model": "llama-3.2-3b-instruct",  
