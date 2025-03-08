@@ -1,0 +1,33 @@
+# Prompt Engineering Examples
+
+This repository contains a collection of Jupyter notebooks demonstrating various prompt engineering techniques and strategies for working with Large Language Models (LLMs).
+
+## About
+
+These examples are designed to work with the Azure OpenAI service using the `gpt-35-turbo` model (version 0125). This model version is set to expire on Azure OpenAI on May 31, 2025 3:00 AM. For more details on the expiration timeline, please see [Microsoft's Model Retirement documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-retirements).
+
+## Contents
+
+The repository includes the following notebooks:
+
+- **00_starter.ipynb**: Basic setup for Azure OpenAI API connections
+- **01_intro.ipynb**: Introduction to core prompt engineering concepts
+- **02_techniques.ipynb**: Advanced prompt engineering techniques
+- **03_summarization.ipynb**: Text summarization techniques
+- **04_inferrance.ipynb**: Inference techniques
+- **05_transformation.ipynb**: Text transformation examples
+- **06_responsability.ipynb**: Responsible AI practices
+
+## Setup
+
+1. Install the required packages:
+
+```ps
+pip install -r requirement.txt
+```
+
+2. Create a `.env` file with your Azure OpenAI credentials:
+
+## References
+
+The techniques demonstrated in these notebooks are based on academic research and industry best practices in prompt engineering.
