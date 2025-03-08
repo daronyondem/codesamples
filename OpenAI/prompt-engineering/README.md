@@ -26,7 +26,12 @@ The repository includes the following notebooks:
 pip install -r requirement.txt
 ```
 
-2. Create a `.env` file with your Azure OpenAI credentials:
+2. Create a `.env` file with your Azure OpenAI credentials based on the `.env.example` file.
+
+3. For the responsibility examples (`06_responsability.ipynb`):
+   - Download and install [LM Studio](https://lmstudio.ai/)
+   - Download the [openchat-3.5-0106 model from TheBloke](https://model.lmstudio.ai/download/TheBloke/openchat-3.5-0106-GGUF)
+   - Start the local server in LM Studio and use the configuration shown in the notebook
 
 ## References
 
