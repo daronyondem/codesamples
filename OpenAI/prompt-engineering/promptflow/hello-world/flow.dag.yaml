@@ -1,0 +1,40 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  text:
+    type: string
+    default: Hello World
+outputs:
+  output_prompt:
+    type: string
+    reference: ${strip_code.output}
+nodes:
+- name: generate_code_prompt
+  type: prompt
+  source:
+    type: code
+    path: generate_code_prompt.jinja2
+  inputs:
+    text: ${inputs.text}
+- name: generate_code
+  type: python
+  source:
+    type: code
+    path: generate_code.py
+  inputs:
+    input1: ${generate_code_prompt.output}
+- name: cleanup
+  type: prompt
+  source:
+    type: code
+    path: cleanup.jinja2
+  inputs:
+    text: ${generate_code.output}
+- name: strip_code
+  type: python
+  source:
+    type: code
+    path: strip_code.py
+  inputs:
+    input1: ${cleanup.output}

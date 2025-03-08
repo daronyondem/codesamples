@@ -11,4 +11,6 @@ dependencies:
   - pip:
       - python-dotenv
       - load-dotenv
+      - promptflow
+      - promptflow-tools
 prefix: C:\conda-envs\prompten
