@@ -23,7 +23,8 @@ The repository includes the following notebooks:
 1. Install the required packages:
 
 ```ps
-pip install -r requirement.txt
+conda env create -f environment.yml
+conda activate prompten
 ```
 
 2. Create a `.env` file with your Azure OpenAI credentials based on the `.env.example` file.
