@@ -1,0 +1,78 @@
+{
+  "package": {},
+  "code": {
+    "line_process.py": {
+      "type": "python",
+      "inputs": {
+        "groundtruth": {
+          "type": [
+            "string"
+          ]
+        },
+        "prediction": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "This tool processes the prediction of a single line and returns the processed result.\n\n:param groundtruth: the groundtruth of a single line.\n:param prediction: the prediction of a single line.",
+      "source": "line_process.py",
+      "function": "line_process"
+    },
+    "aggregate.py": {
+      "type": "python",
+      "inputs": {
+        "processed_results": {
+          "type": [
+            "object"
+          ]
+        }
+      },
+      "description": "This tool aggregates the processed result of all lines and calculate the accuracy. Then log metric for the accuracy.\n\n:param processed_results: List of the output of line_process node.",
+      "source": "aggregate.py",
+      "function": "aggregate"
+    },
+    "python_node_jya8.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "python_node_jya8.py",
+      "function": "my_python_tool"
+    },
+    "code_evaluator.py": {
+      "type": "python",
+      "inputs": {
+        "generated_code": {
+          "type": [
+            "string"
+          ]
+        },
+        "requirements": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Evaluate only the syntax of the generated code. \nReturn 'PASSED' if code is syntactically valid, \notherwise return an error message.",
+      "source": "code_evaluator.py",
+      "function": "evaluate_code"
+    },
+    "aggregator.py": {
+      "type": "python",
+      "inputs": {
+        "grades": {
+          "type": [
+            "object"
+          ]
+        }
+      },
+      "source": "aggregator.py",
+      "function": "calculate_accuracy"
+    }
+  }
+}

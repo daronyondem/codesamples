@@ -1,0 +1,30 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  ask:
+    type: string
+  code:
+    type: string
+    default: ""
+outputs:
+  results:
+    type: string
+    reference: ${code_eval.output}
+nodes:
+- name: code_eval
+  type: python
+  source:
+    type: code
+    path: code_evaluator.py
+  inputs:
+    requirements: ${inputs.ask}
+    generated_code: ${inputs.code}
+- name: aggregator
+  type: python
+  source:
+    type: code
+    path: aggregator.py
+  inputs:
+    grades: ${code_eval.output}
+  aggregation: true

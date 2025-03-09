@@ -1,0 +1,7 @@
+tests:
+  - name: prompt-chaining_default_20250309_121817_744000
+    display_name: prompt-chaining_${variant_id}_${timestamp}
+    flow: c:\github\dy\codesamples\OpenAI\prompt-engineering\promptflow\prompt-chaining
+    data: c:\github\dy\codesamples\OpenAI\prompt-engineering\promptflow\test_run.jsonl
+    column_mapping:
+      text: ${data.text}

@@ -1,0 +1,8 @@
+tests:
+  - name: chain-evaluation_default_20250309_122122_682000
+    display_name: ${run}_chain-evaluation_${timestamp}
+    flow: c:\github\dy\codesamples\OpenAI\prompt-engineering\promptflow\chain-evaluation
+    run: prompt-chaining_default_20250309_121419_271000
+    column_mapping:
+      ask: ${run.inputs.text}
+      code: ${run.outputs.output_prompt}
