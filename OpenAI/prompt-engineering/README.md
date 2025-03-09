@@ -20,12 +20,18 @@ The repository includes the following notebooks:
 
 ## Prompt Flow Examples
 
-This repository also includes examples using Microsoft's Prompt Flow tool:
+This repository also includes examples using Microsoft's Prompt Flow tool, a framework for building, evaluating, and deploying LLM-powered workflows:
 
-- **Flow orchestration**: Examples of managing complex prompt chains and workflows
-- **Evaluation techniques**: Methods to assess the quality and performance of prompts
+- **[prompt-chaining](./promptflow/prompt-chaining)**: Demonstrates how to create multi-step prompt chains where the output from one node serves as input to the next
+  - Includes a workflow that generates code based on text input and processes the result through multiple steps
+  
+- **[chain-evaluation](./promptflow/chain-evaluation)**: Shows methods to evaluate code generation quality
+  - Features a code evaluator that grades generated code against requirements
+  - Includes an aggregation component that combines evaluation results
 
 ## Setup
+
+### For Jupyter Notebooks
 
 1. Install the required packages:
 
@@ -41,6 +47,24 @@ conda activate prompten
    - Download the [openchat-3.5-0106 model from TheBloke](https://model.lmstudio.ai/download/TheBloke/openchat-3.5-0106-GGUF)
    - Start the local server in LM Studio and use the configuration shown in the notebook
 
+### For Prompt Flow Examples
+
+1. Install the Azure Prompt Flow SDK:
+
+```ps
+pip install promptflow
+```
+
+2. Navigate to the specific example directory and run:
+
+```ps
+pf flow run --flow .
+```
+
 ## References
 
 The techniques demonstrated in these notebooks are based on academic research and industry best practices in prompt engineering.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
