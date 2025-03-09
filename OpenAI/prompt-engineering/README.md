@@ -14,9 +14,16 @@ The repository includes the following notebooks:
 - **01_intro.ipynb**: Introduction to core prompt engineering concepts
 - **02_techniques.ipynb**: Advanced prompt engineering techniques
 - **03_summarization.ipynb**: Text summarization techniques
-- **04_inferrance.ipynb**: Inference techniques
+- **04_inference.ipynb**: Inference techniques
 - **05_transformation.ipynb**: Text transformation examples
-- **06_responsability.ipynb**: Responsible AI practices
+- **06_responsibility.ipynb**: Responsible AI practices
+
+## Prompt Flow Examples
+
+This repository also includes examples using Microsoft's Prompt Flow tool:
+
+- **Flow orchestration**: Examples of managing complex prompt chains and workflows
+- **Evaluation techniques**: Methods to assess the quality and performance of prompts
 
 ## Setup
 
@@ -29,7 +36,7 @@ conda activate prompten
 
 2. Create a `.env` file with your Azure OpenAI credentials based on the `.env.example` file.
 
-3. For the responsibility examples (`06_responsability.ipynb`):
+3. For the responsibility examples (`06_responsibility.ipynb`):
    - Download and install [LM Studio](https://lmstudio.ai/)
    - Download the [openchat-3.5-0106 model from TheBloke](https://model.lmstudio.ai/download/TheBloke/openchat-3.5-0106-GGUF)
    - Start the local server in LM Studio and use the configuration shown in the notebook
