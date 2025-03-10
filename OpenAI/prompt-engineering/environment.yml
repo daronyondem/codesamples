@@ -13,4 +13,5 @@ dependencies:
       - load-dotenv
       - promptflow
       - promptflow-tools
+      - chromadb
 prefix: C:\conda-envs\prompten
