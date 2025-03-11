@@ -33,16 +33,18 @@ This repository also includes examples using Microsoft's Prompt Flow tool, a fra
 
 ### For Jupyter Notebooks
 
-1. Install the required packages:
+1. Install [Anaconda](https://www.anaconda.com/download).
+
+2. Install the required packages:
 
 ```ps
 conda env create -f environment.yml
 conda activate prompten
 ```
 
-2. Create a `.env` file with your Azure OpenAI credentials based on the `.env.example` file.
+3. Create a `.env` file with your Azure OpenAI credentials based on the `.env.example` file.
 
-3. For the responsibility examples (`06_responsibility.ipynb`):
+4. For the responsibility examples (`06_responsibility.ipynb`):
    - Download and install [LM Studio](https://lmstudio.ai/)
    - Download the [openchat-3.5-0106 model from TheBloke](https://model.lmstudio.ai/download/TheBloke/openchat-3.5-0106-GGUF)
    - Start the local server in LM Studio and use the configuration shown in the notebook
