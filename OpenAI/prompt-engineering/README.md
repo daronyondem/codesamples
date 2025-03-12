@@ -38,7 +38,7 @@ This repository also includes examples using Microsoft's Prompt Flow tool, a fra
 2. Install the required packages:
 
 ```ps
-conda env create -f environment.yml
+conda env create --file=environment.yml
 conda activate prompten
 ```
 

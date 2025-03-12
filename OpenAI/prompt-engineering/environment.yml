@@ -1,4 +1,4 @@
-name: C:\conda-envs\prompten
+name: prompten
 channels:
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
@@ -14,4 +14,4 @@ dependencies:
       - promptflow
       - promptflow-tools
       - chromadb
-prefix: C:\conda-envs\prompten
+prefix: prompten
