@@ -1,29 +1,67 @@
 # OpenAI Samples
 
-## Introduction
+This directory contains examples, tools, and integrations for working with OpenAI models. The collection demonstrates various capabilities including prompt engineering, RAG implementations, plugin development, and serverless integrations.
 
-This sample set is structured into three main folders, each serving a unique purpose in demonstrating and exploring various aspects of machine learning, prompt engineering, and plugin development.
+## Directory Structure
 
-### Folders Overview
+### [intro](intro/)
+Getting started resources for OpenAI and Azure OpenAI Service:
 
-1. **Intro**: This folder serves as the starting point for understanding and using our resources. It contains:
+- `quickstart.ipynb`: Basic environment setup and API testing for OpenAI and Langchain
+- `dall-e.ipynb`: Examples of GPT-4 Vision and DALL-E 3 image generation
+- `langchain.ipynb`: Complete RAG (Retrieval Augmented Generation) pipeline implementation
+- `dotnet-rag.ipynb`: RAG implementation using .NET libraries
+- `azure-functions-June-2023-Updates.txt`: Sample data used in RAG demos
+- `requirement.txt`: Dependencies for the sample notebooks
 
-   - `azure-functions-June-2023-Updates.txt`: Sample data files used for a RAG demo.
-   - `dall-e.ipynb`: Notebook containing GPT-4 Vision and Dall-E3 sample code.
-   - `langchain.ipynb`: Demonstrates a complete RAG pipeline using langchain, including creating embeddings, storing them, and implementing hybrid lookup. It also compares regular LLM queries with RAG-implemented LLM queries.
-   - `quickstart.ipynb`: A simple notebook to test the local environment, ensuring compatibility with both OpenAI and Langchain.
-   - `requirement.txt`: Lists all the necessary requirements and dependencies for the setup.
+### [azure-functions](azure-functions/)
+Integration of Azure Functions with OpenAI services:
 
-2. **Plug-in-Development**: This folder is dedicated to plugin development, featuring:
+- `IngestText.cs`: Function for ingesting and processing text for embedding
+- `GenerateEmbeddings.cs`: Creates vector embeddings from text using OpenAI
+- `RAGPrompting.cs`: Implements RAG pattern within Azure Functions
+- Configuration files and HTTP test files
 
-   - A customized version of the Semantic Kernel ChatGPT plugin starter.
-   - A Semantic Kernel C# Hello World Starter for testing the plugin with OpenAI.
+### [plug-in-development](plug-in-development/)
+Tools for developing custom plugins for ChatGPT and other AI services:
 
-3. **Prompt-Engineering**: Here, you'll find various notebooks that delve into prompt engineering techniques. These notebooks showcase how these techniques can be applied and demonstrate their results.
+- `sk-csharp-chatgpt-plugin`: Customized version of the Semantic Kernel ChatGPT plugin starter
+- `sk-csharp-tester`: Semantic Kernel C# tester for validating plugins with OpenAI
+
+### [prompt-engineering](prompt-engineering/)
+Comprehensive materials for learning prompt engineering techniques:
+
+- Educational notebooks covering core concepts, techniques, and best practices
+- Labs for hands-on practice with real-world examples
+- Prompt Flow examples demonstrating prompt chaining and evaluation
+- Detailed setup instructions for both Azure OpenAI and local models
+
+### [text-summarizer](text-summarizer/)
+Text processing and summarization examples:
+
+- `text-process.ipynb`: Notebook demonstrating text summarization techniques with OpenAI models
+
+## Prerequisites
+
+Each subdirectory may have specific requirements, but generally you'll need:
+
+- Python 3.8+ or .NET 6+ (depending on the example)
+- OpenAI API key or Azure OpenAI Service access
+- Local environment for Jupyter notebooks or development IDE
 
 ## Getting Started
 
-To get started with this repository, clone it to your local machine and install the necessary dependencies listed in `requirement.txt`. Each folder contains its own set of files and instructions, so navigate to the folder that aligns with your interest or project needs.
+1. Clone the repository to your local machine
+2. Navigate to the subdirectory that interests you
+3. Follow the specific setup instructions in each section's README or notebook
+4. For Python examples, install the required dependencies with `pip install -r requirements.txt`
+
+## Related Resources
+
+- [Azure OpenAI Service Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
+- [OpenAI API Documentation](https://platform.openai.com/docs/)
+- [Semantic Kernel GitHub Repository](https://github.com/microsoft/semantic-kernel)
+- [Microsoft Prompt Flow](https://github.com/microsoft/promptflow)
 
 ## Contributing
 
