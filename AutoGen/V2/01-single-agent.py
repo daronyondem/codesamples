@@ -4,14 +4,15 @@ from autogen import AssistantAgent, UserProxyAgent
 # Configure the LLM with local LLAMA
 llm_config = {
     "config_list": [{
-        "model": "llama-3.2-3b-instruct",  
+        "model": "llama-3.2-3b-instruct",
         "base_url": "http://127.0.0.1:1234/v1",  # Local server address with /v1 for OpenAI API compatibility
-        "api_key": "not-needed",  # Placeholder API key for local server
+        "api_key": "not-needed",                # Placeholder API key for local server
         "price": [0.0, 0.0],
-        "temperature": 0.5,  # Lower temperature for more focused responses
-        "max_tokens": 100
-    }]
+    }],
+    "temperature": 0.5,                          
+    "max_tokens": 100                            
 }
+
 
 # Create the AssistantAgent
 assistant = AssistantAgent(
