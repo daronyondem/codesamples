@@ -1,8 +1,9 @@
 python-dotenv==1.0.0
 langchain==0.0.137
 tiktoken
-openai==0.28
+openai>=1.0.0
 azure.core
 azure-common
 isodate
 Pillow
+ffmpeg-python

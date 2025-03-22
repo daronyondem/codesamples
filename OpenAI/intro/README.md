@@ -26,11 +26,18 @@ This directory contains introductory examples and notebooks for working with Ope
   - Shows how to build RAG systems in a .NET environment
   - Demonstrates integration with Semantic Kernel
   - Includes vector search and context augmentation techniques
+  
+- **[4o-transcribe.ipynb](4o-transcribe.ipynb)**: Audio transcription with GPT-4o-transcribe
+  - Splits long audio files into manageable chunks for improved accuracy
+  - Processes audio transcription using OpenAI's GPT-4o-transcribe model
+  - Combines chunks into a single transcription output
+  - Supports language specification for better transcription results
 
 ### Supporting Files
 
 - **[azure-functions-June-2023-Updates.txt](azure-functions-June-2023-Updates.txt)**: Sample text data used in the RAG demonstrations
 - **[requirement.txt](requirement.txt)**: Lists all dependencies needed to run the notebooks
+- **chunks/**: Directory created by the 4o-transcribe.ipynb notebook to store audio chunks for processing
 
 ## Prerequisites
 
@@ -40,6 +47,7 @@ To run these examples, you'll need:
 2. Python 3.8 or higher
 3. Jupyter Notebook environment
 4. Required Python packages (listed in `requirement.txt`)
+5. FFmpeg installed on your system (required for audio processing in `4o-transcribe.ipynb`)
 
 ## Setup Instructions
 
@@ -73,5 +81,6 @@ Start with the `quickstart.ipynb` notebook to verify your environment setup, the
 
 - For image generation and analysis: `dall-e.ipynb`
 - For RAG implementations: `langchain.ipynb` or `dotnet-rag.ipynb`
+- For audio transcription: `4o-transcribe.ipynb`
 
 Each notebook includes detailed comments and explanations to guide you through the examples.
