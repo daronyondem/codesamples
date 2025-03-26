@@ -1,24 +1,19 @@
 name: autogenv2
 channels:
   - defaults
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
 dependencies:
-  - bzip2=1.0.8=h80987f9_6
-  - ca-certificates=2025.2.25=hca03da5_0
-  - libffi=3.4.4=hca03da5_1
-  - ncurses=6.4=h313beb8_0
-  - openssl=3.0.16=h02f6b3c_0
-  - pip=25.0=py310hca03da5_0
-  - python=3.10.16=hb885b13_1
-  - readline=8.2=h1a28f6b_0
-  - setuptools=75.8.0=py310hca03da5_0
-  - sqlite=3.45.3=h80987f9_0
-  - tk=8.6.14=h6ba3021_0
-  - tzdata=2025a=h04d1e81_0
-  - wheel=0.45.1=py310hca03da5_0
-  - xz=5.6.4=h80987f9_1
-  - zlib=1.2.13=h18a0788_1
+  - bzip2=1.0.8
+  - ca-certificates
+  - libffi=3.4.4
+  - openssl
+  - pip
+  - python=3.10.16
+  - setuptools
+  - sqlite
+  - tk
+  - wheel
+  - xz
+  - zlib
   - pip:
       - annotated-types==0.7.0
       - anyio==4.9.0
@@ -49,4 +44,3 @@ dependencies:
       - tqdm==4.67.1
       - typing-extensions==4.12.2
       - urllib3==2.3.0
-prefix: /opt/anaconda3/envs/autogenv2
